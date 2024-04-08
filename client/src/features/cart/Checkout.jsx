@@ -15,7 +15,6 @@ function Checkout() {
     : [];
   const navigate = useNavigate();
 
-  // console.log(cart);
   return (
     <div className="ml-auto mr-auto flex min-h-dvh flex-col gap-5 pb-10 pl-3 pr-4 pt-14 md:w-11/12 md:px-5 lg:px-16">
       {emptyCart ? (

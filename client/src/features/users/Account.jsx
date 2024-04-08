@@ -7,8 +7,8 @@ import { useUserOrders } from "./useUserOrders";
 function Account() {
   const { user } = useUser();
   const { email } = user;
-  const { addresses, isLoading } = useUserAddresses();
-  const { orders, isLoading: orderLoading } = useUserOrders();
+  const { addresses } = useUserAddresses();
+  const { orders } = useUserOrders();
   const { firstName, lastName, phoneNumber, birthday, avatar } =
     user.user_metadata;
   const formattedPhoneNumber = `(${phoneNumber?.slice(

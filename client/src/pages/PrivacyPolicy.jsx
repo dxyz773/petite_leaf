@@ -7,10 +7,10 @@ function PrivacyPolicy() {
       <p className="mb-8 mt-4 text-[15px] leading-7">
         Welcome to Petite Leaf. This Privacy Policy describes how Petite Leaf
         collects, uses, and protects the personal information you provide when
-        using our website (the "Site"). By accessing or using the Site, you
-        consent to the collection, use, and disclosure of your personal
-        information as described in this Privacy Policy. If you do not agree
-        with this Privacy Policy, please do not use the Site.
+        using our website (the &quot;Site&quot;). By accessing or using the
+        Site, you consent to the collection, use, and disclosure of your
+        personal information as described in this Privacy Policy. If you do not
+        agree with this Privacy Policy, please do not use the Site.
       </p>
       <ol className="list-decimal space-y-3.5 pl-4">
         <li>

@@ -11,12 +11,7 @@ import { useRemoveFavorite } from "./useRemoveFavorite";
 import { useCart } from "../cart/CartContext";
 
 function Favorites() {
-  const {
-    favorites,
-    isLoading: favoritesLoading,
-    isPending,
-    fetchStatus,
-  } = useFavorites();
+  const { favorites, isLoading: favoritesLoading } = useFavorites();
   const { addCartItem, showDrawer } = useCart();
   const { removeFavorite, isDeleting } = useRemoveFavorite();
   const navigate = useNavigate();

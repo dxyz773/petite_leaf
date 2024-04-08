@@ -48,8 +48,7 @@ function Order() {
 
   const orderItems = JSON.parse(checkout_cart);
   const last4 = cardNumber.slice(-4);
-  console.log(phoneNumber);
-  console.log(billingPhoneNumber);
+
   return (
     <div className="ml-auto mr-auto flex min-h-dvh flex-col gap-5 pb-32 pl-3 pr-4 pt-14 font-serif tracking-wider md:w-11/12 md:px-5 lg:px-16">
       <header className="border-b-2 pb-14 text-center">

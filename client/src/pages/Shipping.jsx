@@ -9,7 +9,8 @@ function Shipping() {
         <p className="mb-4 mt-12 px-4 text-[15px] md:mb-6 md:px-10 lg:ml-2 lg:mr-28 xl:ml-28 xl:mr-48">
           At Petite Leaf, we strive to provide the utmost care and attention to
           ensure that your botanical treasures arrive safely and promptly to
-          your doorstep. Here's what you can expect from our shipping process:
+          your doorstep. Here&apos;s what you can expect from our shipping
+          process:
         </p>
         <div className="max-w-[900px] py-9 md:ml-8 md:mr-8 lg:mr-16 xl:ml-32">
           {shipping.map((policy) => (

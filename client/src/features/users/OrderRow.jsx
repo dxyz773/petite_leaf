@@ -2,9 +2,8 @@ import { useNavigate } from "react-router-dom";
 
 function OrderRow({ order, date }) {
   const navigate = useNavigate();
-  console.log(order);
+
   const items = JSON.parse(order["order_data"]["checkout_cart"]);
-  // console.log(items);
 
   return (
     <div className={`border-b border-zinc-200 font-serif tracking-widest`}>

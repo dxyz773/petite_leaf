@@ -5,12 +5,12 @@ function TermsOfUse() {
         Terms of Use - Petite Leaf
       </h2>
       <p className="mb-8 mt-4 text-[15px] leading-7">
-        Welcome to Petite Leaf. These Terms of Use ("Terms") govern your access
-        to and use of the Petite Leaf website (the "Site"`). Please read these
-        Terms carefully before using the Site. By accessing or using the Site,
-        you agree to be bound by these Terms and our Privacy Policy. If you do
-        not agree with these Terms or our Privacy Policy, please do not use the
-        Site.
+        Welcome to Petite Leaf. These Terms of Use (&quot;Terms&quot;) govern
+        your access to and use of the Petite Leaf website (the
+        &quot;Site&quot;). Please read these Terms carefully before using the
+        Site. By accessing or using the Site, you agree to be bound by these
+        Terms and our Privacy Policy. If you do not agree with these Terms or
+        our Privacy Policy, please do not use the Site.
       </p>
       <ol className="list-decimal space-y-3.5 pl-4">
         <li>
@@ -85,11 +85,11 @@ function TermsOfUse() {
             Disclaimer of Warranties
           </h4>
           <p className="text-[15px]">
-            The Site is provided on an "as is" and "as available" basis without
-            warranties of any kind, either express or implied. Petite Leaf
-            disclaims all warranties, including, but not limited to, implied
-            warranties of merchantability, fitness for a particular purpose, and
-            non-infringement.
+            The Site is provided on an &quot;as is&quot; and &quot;as
+            available&quot; basis without warranties of any kind, either express
+            or implied. Petite Leaf disclaims all warranties, including, but not
+            limited to, implied warranties of merchantability, fitness for a
+            particular purpose, and non-infringement.
           </p>
         </li>
         <li>
@@ -138,19 +138,19 @@ function TermsOfUse() {
               <p className="mb-3 text-[15px]">
                 b.
                 <span className="font-semibold"> Shine the Light Law: </span>
-                Under California's Shine the Light law, California residents
-                have the right to request certain information regarding our
-                disclosure of personal information to third parties for their
-                direct marketing purposes. To make such a request, please
-                contact us at hello@peiteleaf.com.
+                Under California&apos;s Shine the Light law, California
+                residents have the right to request certain information
+                regarding our disclosure of personal information to third
+                parties for their direct marketing purposes. To make such a
+                request, please contact us at hello@peiteleaf.com.
               </p>
               <p className="mb-3 text-[15px]">
                 c.
                 <span className="font-semibold">
                   {" Do Not Track Signals: "}
                 </span>
-                We do not currently respond to "Do Not Track" signals as there
-                is no consistent industry standard for compliance.
+                We do not currently respond to &quot;Do Not Track&quot; signals
+                as there is no consistent industry standard for compliance.
               </p>
             </li>
           </ol>

@@ -4,11 +4,9 @@ import supabase from "./supabase";
 
 export async function getPlants([filters], { sortBy }) {
   let query = supabase.from("plants").select("*");
-  // console.log(filters);
 
   // ---------------------- FILTER ---------------------------- //
   if (filters.length) {
-    // console.log("Working");
     for (const { field, method, value } of filters) {
       query = query[method](field, value);
     }
@@ -26,7 +24,6 @@ export async function getPlants([filters], { sortBy }) {
     console.error(error);
     throw new Error("Plants could not be loaded");
   }
-  // console.log(data);
 
   return data;
 }
@@ -40,7 +37,7 @@ export async function getPlantByID(id) {
     console.error(error);
     throw new Error("Selected plant could not be loaded");
   }
-  // console.log(data);
+
   return data;
 }
 
@@ -56,7 +53,7 @@ export async function getPlantByMain_Name(name) {
     console.error(error);
     throw new Error("Selected plant could not be loaded");
   }
-  // console.log(data);
+
   return data;
 }
 
@@ -64,8 +61,6 @@ export async function getPlantByMain_Name(name) {
 
 export async function getAllLight() {
   let { data, error } = await supabase.from("light").select("*");
-
-  // console.log(data);
 
   if (error) {
     console.error(error);
@@ -78,8 +73,6 @@ export async function getAllLight() {
 
 export async function getAllCare() {
   let { data, error } = await supabase.from("care").select("*");
-
-  // console.log(data);
 
   if (error) {
     console.error(error);
@@ -97,7 +90,7 @@ export async function getAllWater() {
     console.error(error);
     throw new Error("Water data could not be loaded");
   }
-  // console.log(data);
+
   return data;
 }
 
@@ -113,7 +106,7 @@ export async function createWater(newWater) {
     console.error(error);
     throw new Error("Water data could not be created");
   }
-  // console.log(data);
+
   return data;
 }
 
@@ -130,7 +123,6 @@ export async function deleteWaterById(id) {
 
 export async function getAllPetFriendly() {
   let { data, error } = await supabase.from("pet_friendly").select("*");
-  // console.log(data);
 
   if (error) {
     console.error(error);
@@ -148,7 +140,7 @@ export async function getAllPrices() {
     console.error(error);
     throw new Error("Pet-friendly data could not be loaded");
   }
-  // console.log(data);
+
   return data;
 }
 
@@ -161,7 +153,7 @@ export async function getAllUIData() {
     console.error(error);
     throw new Error("Page UI data could not be loaded");
   }
-  // console.log(data);
+
   return data;
 }
 
@@ -174,7 +166,7 @@ export async function getAllHero() {
     console.error(error);
     throw new Error("Hero data could not be loaded");
   }
-  // console.log(data);
+
   return data;
 }
 
@@ -186,7 +178,7 @@ export async function getAllBlogPosts() {
     console.error(error);
     throw new Error("Hero data could not be loaded");
   }
-  // console.log(data);
+
   return data;
 }
 
@@ -202,10 +194,9 @@ export async function getPostByTitle(title) {
     console.error(error);
     throw new Error("Selected plant could not be loaded");
   }
-  // console.log(data);
+
   return data;
 }
-
 
 // ------- 4 Products By Random Filter -------
 export async function getRandomProductsByFilter(obj) {
@@ -219,6 +210,6 @@ export async function getRandomProductsByFilter(obj) {
     console.error(error);
     throw new Error("Selected plant with filter could not be loaded");
   }
-  // console.log(data);
+
   return data;
 }

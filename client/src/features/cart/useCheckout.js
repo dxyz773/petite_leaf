@@ -8,7 +8,6 @@ export function useCheckout() {
   const { mutate: order, isLoading: ordering } = useMutation({
     mutationFn: registerOrder,
     onSuccess: (data) => {
-      console.log(data);
       const [{ order_number }] = data;
       navigate(`/order/${order_number}`);
     },

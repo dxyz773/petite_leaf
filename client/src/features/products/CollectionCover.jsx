@@ -1,6 +1,6 @@
 import Btn from "../../ui/Btn";
 
-function CollectionCover({ title, to, side, url }) {
+function CollectionCover({ title, side, url }) {
   if (side === "left") {
     return (
       <div className="flex h-[30rem] flex-col shadow-lg lg:flex-row">

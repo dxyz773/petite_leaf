@@ -22,7 +22,7 @@ import Error from "../../pages/Error";
 
 import { useAddFavorite } from "../users/useAddFavorite";
 import { useFavorites } from "../users/useFavorites";
-import { FormControlLabel, Switch } from "@mui/material";
+import { FormControlLabel } from "@mui/material";
 import { useRemoveFavorite } from "../users/useRemoveFavorite";
 import { useUser } from "../users/useUser";
 import { useCart } from "../cart/CartContext";
@@ -33,7 +33,7 @@ function Product() {
   const { water, isLoading: waterLoading } = useWater();
   const { pet_friendly, isLoading: petFriendlyLoading } = usePetFriendly();
 
-  const { plant, isLoading, error } = useProduct();
+  const { plant, isLoading } = useProduct();
   const { user } = useUser();
 
   const [activeImg, setActiveImg] = useState("");
@@ -42,8 +42,7 @@ function Product() {
   const { addFavorite, isAdding } = useAddFavorite();
   const { removeFavorite, isDeleting } = useRemoveFavorite();
 
-  const { addCartItem, cart, showDrawer } = useCart();
-  console.log(cart);
+  const { addCartItem, showDrawer } = useCart();
 
   if (isLoading) return <Loading />;
 
@@ -169,7 +168,7 @@ function Product() {
           {/* Add To Cart Button  */}
           <Btn
             type={stock_amount ? "product" : "product_soldout"}
-            disabled={stock_amount ? false : true}
+            disabled={stock_amount || isAdding || isDeleting ? false : true}
             onClick={
               stock_amount
                 ? () => {

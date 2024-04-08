@@ -48,10 +48,11 @@ function OurStory() {
           </p>
           <br />
           <p className="font-serif text-xl leading-8">
-            As I watched these resilient beings thrive under my care, I couldn't
-            help but be inspired by their beauty and resilience. Their presence
-            became a constant reminder of the healing power of nature and the
-            potential for growth and renewal, even in the darkest of times.
+            As I watched these resilient beings thrive under my care, I
+            couldn&apos;t help but be inspired by their beauty and resilience.
+            Their presence became a constant reminder of the healing power of
+            nature and the potential for growth and renewal, even in the darkest
+            of times.
           </p>
           <br />
           <p className="font-serif text-xl leading-8">
@@ -59,15 +60,16 @@ function OurStory() {
             company—a desire to share the incredible benefits of plants with
             others who may be navigating their own struggles. I envisioned
             creating a space where the simple act of surrounding oneself with
-            greenery could bring light, joy, and healing into people's lives.
+            greenery could bring light, joy, and healing into people&apos;s
+            lives.
           </p>
           <br />
           <p className="font-serif text-xl leading-8">
             Today, as I look back on the journey that led us here, I am filled
             with gratitude for the opportunity to share this passion with you.
-            Our company is not just about selling plants—it's about spreading
-            hope, fostering connection, and nurturing well-being through the
-            beauty of nature.
+            Our company is not just about selling plants—it&apos;s about
+            spreading hope, fostering connection, and nurturing well-being
+            through the beauty of nature.
           </p>
           <br />
           <p className="font-serif text-xl leading-8">

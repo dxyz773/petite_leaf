@@ -1,7 +1,4 @@
-import { useNavigate } from "react-router-dom";
-
-function Error() {
-  const navigate = useNavigate();
+function ErrorFallback({ error, resetErrorBoundary }) {
   return (
     <div
       className="hero min-h-screen opacity-90"
@@ -21,20 +18,14 @@ function Error() {
           </h1>
 
           <p className="mb-8 font-serif uppercase tracking-wider text-neutral-900">
-            Page Not Found
+            {error.message}
           </p>
           <div className="flex gap-4">
             <button
               className="btn btn-primary w-28 rounded-sm bg-neutral-950 font-serif text-sm  font-normal tracking-wide text-neutral-200 hover:bg-lime-400 hover:text-neutral-950"
-              onClick={() => navigate(-1)}
+              onClick={resetErrorBoundary}
             >
-              <span>&larr;</span>Go Back
-            </button>
-            <button
-              className="btn btn-primary w-28 rounded-sm font-serif text-sm font-normal tracking-wide hover:bg-lime-400"
-              onClick={() => navigate("/products")}
-            >
-              Shop Plants
+              <span>&larr;</span>Return Home
             </button>
           </div>
         </div>
@@ -43,4 +34,4 @@ function Error() {
   );
 }
 
-export default Error;
+export default ErrorFallback;

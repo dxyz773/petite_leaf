@@ -43,7 +43,7 @@ function Footer() {
           <LinkCustom to="/cookie-policy" type="footer" text="Cookie policy" />
         </nav>
         <form>
-          <h6 className="footer-title">Let's Grow Together</h6>
+          <h6 className="footer-title">Let&apos;s Grow Together</h6>
           <fieldset className="form-control w-80">
             <label className="label">
               <span className="label-text mb-2">

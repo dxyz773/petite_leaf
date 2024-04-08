@@ -132,7 +132,7 @@ export async function registerOrder({ order_data, user_id }) {
     .select();
 
   if (error) throw new Error(error.message);
-  // console.log(data);
+
   return data;
 }
 
@@ -143,7 +143,7 @@ export async function getOrdersByOrderNumber(order_num) {
     .eq("order_number", order_num);
 
   if (error) throw new Error(error.message);
-  console.log(data);
+
   return data;
 }
 
@@ -154,7 +154,7 @@ export async function getOrdersByUserID(id) {
     .eq("user_id", id);
 
   if (error) throw new Error(error.message);
-  // console.log(data);
+
   return data;
 }
 
@@ -195,7 +195,7 @@ export async function addAddress({
     .select();
 
   if (error) throw new Error(error.message);
-  // console.log(data);
+
   return data;
 }
 
@@ -206,7 +206,7 @@ export async function getAddressesByUserId(id) {
     .eq("user_id", id);
 
   if (error) throw new Error(error.message);
-  // console.log(data);
+
   return data;
 }
 
@@ -243,7 +243,7 @@ export async function updateAddressByAddressId({
     .select();
 
   if (error) throw new Error(error.message);
-  console.log(data);
+
   return data;
 }
 
