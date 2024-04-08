@@ -14,7 +14,7 @@ function OurStory() {
         title="Our Story"
         className="mb-[7rem] mr-12 font-serif text-6xl font-semibold text-neutral-50 "
       />
-      <div className="ml-auto mr-auto min-h-dvh w-[28rem] pb-24 pl-5 pr-5 pt-24 sm:w-[36rem] md:w-[48rem] lg:w-[60rem] lg:pr-0 xl:w-[75rem]">
+      <div className="ml-auto mr-auto min-h-dvh w-[20rem] pb-24 pl-5 pr-5 pt-24 min-[500px]:w-[28rem] sm:w-[36rem] md:w-[48rem] lg:w-[60rem] lg:pr-0 xl:w-[75rem]">
         <div className="font-serif text-xl tracking-wide lg:text-2xl">
           <p className="mb-4 pt-12 text-center text-3xl font-semibold italic text-neutral-600 lg:text-left">
             &quot;Together, we bloom through adversity.&quot;
