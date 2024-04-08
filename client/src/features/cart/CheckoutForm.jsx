@@ -119,7 +119,6 @@ function CheckoutForm({ cart, subTotal }) {
             disabled={ordering}
             className="grow bg-neutral-50 px-2 py-1 text-sm tracking-wide"
             placeholder="First Name"
-            // disabled={isLoading}
             {...register("firstName", {
               required: "This field is required",
               minLength: {
@@ -144,7 +143,7 @@ function CheckoutForm({ cart, subTotal }) {
             disabled={ordering}
             className="grow bg-neutral-50 px-2 py-1 text-sm tracking-wide"
             placeholder="Last Name"
-            // disabled={isLoading}
+
             {...register("lastName", {
               required: "This field is required",
               minLength: {
@@ -169,7 +168,7 @@ function CheckoutForm({ cart, subTotal }) {
             disabled={ordering}
             className="grow bg-neutral-50 px-2 py-1 text-sm tracking-wide"
             placeholder="Company (optional)"
-            // disabled={isLoading}
+
             {...register("company")}
           />
         </label>
@@ -444,7 +443,7 @@ function CheckoutForm({ cart, subTotal }) {
                   type="text"
                   disabled={ordering}
                   placeholder="Company (optional)"
-                  // disabled={isLoading}
+
                   {...register("billingCompany")}
                 />
               </label>

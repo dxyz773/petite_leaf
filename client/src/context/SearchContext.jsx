@@ -33,8 +33,6 @@ function SearchContextProvider({ children }) {
         )
       : 0;
 
-  // console.log(searchPlantResults);
-
   useEffect(
     function () {
       const escapeSearch = function (e) {

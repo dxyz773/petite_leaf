@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
 function Recommendations({ page }) {
-  const { randomProducts, isLoading, error } = useRandomProducts();
+  const { randomProducts, isLoading } = useRandomProducts();
   const navigate = useNavigate();
 
   if (isLoading) return <div>Loading...</div>;

@@ -6,7 +6,7 @@ import { collectionData } from "../../utils/helperData";
 
 function Collection() {
   const { name } = useParams();
-  const { plants, isLoading } = useProducts();
+  const { plants } = useProducts();
 
   const collection_main_img = {
     bestsellers: "ceyda-ciftci-dDVU6D_6T80-unsplash.jpg",
@@ -27,9 +27,6 @@ function Collection() {
     ?.split("-")
     ?.map((curr) => curr[0]?.toUpperCase() + curr.slice(1))
     .join(" ");
-
-  console.log(isBestseller);
-  console.log(bestseller_collection_list);
 
   if (!collectionData?.[collection_key]) {
     return <Error />;
