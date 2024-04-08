@@ -5,8 +5,7 @@ export function useAddAddress() {
   const queryClient = useQueryClient();
   const { mutate: addAddress, isLoading: isAdding } = useMutation({
     mutationFn: addAddressApi,
-    onSuccess: ({ data }) => {
-      console.log(data);
+    onSuccess: () => {
       toast.success("Address successfully added");
       queryClient.invalidateQueries(["userAddresses"]);
     },

@@ -10,7 +10,7 @@ function CollapseItem({ categoryChoiceId, name, text }) {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const formattedFilterField = name?.replaceAll("_", "-");
-  // console.log(formattedFilterField);
+
   const searchParamText = `${text
     .replaceAll(",", "")
     .replaceAll(" ", "-")
@@ -22,7 +22,6 @@ function CollapseItem({ categoryChoiceId, name, text }) {
     searchParams.get(formattedFilterField) === searchParamText ? true : false;
 
   function handleClick(value) {
-    // console.log({ [`${name}_id`]: categoryChoiceId });
     if (searchParams.get(formattedFilterField) === value) {
       searchParams.delete(formattedFilterField, value);
     } else if (
@@ -37,10 +36,6 @@ function CollapseItem({ categoryChoiceId, name, text }) {
       return;
     }
     setSearchParams(searchParams);
-    // setChecked((prev) => !prev);
-
-    // setChecked((prev) => !prev);
-    // setChecked((prev) => !prev);
   }
 
   return (
@@ -71,33 +66,3 @@ function CollapseItem({ categoryChoiceId, name, text }) {
 }
 
 export default CollapseItem;
-
-// INITIAL VERSION w/o Material UI
-
-{
-  /* <div className="flex gap-3">
-<input
-  // defaultChecked={activeChoice === text ? "checked" : false}
-  type="checkbox"
-  checked={checked}
-  value={categoryChoiceId}
-  name={name}
-  id={name + categoryChoiceId + name}
-  onChange={(e) => {
-    handleClick(e);
-  }}
-  className="rounded-none accent-lime-700"
-/>
-<div className="flex gap-[5px]">
-  <Icon
-    iconType={filterSVGPaths[name][categoryChoiceId].iconType}
-    draw={filterSVGPaths[name][categoryChoiceId].path}
-    hover="fill-lime-600"
-    width="18px"
-  />
-  <label name={name} className="hover:underline hover:underline-offset-2">
-    {formattedText}
-  </label>
-</div>
-</div> */
-}

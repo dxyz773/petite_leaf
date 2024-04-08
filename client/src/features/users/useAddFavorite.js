@@ -17,8 +17,7 @@ export function useAddFavorite() {
   } = useMutation({
     mutationFn: (favorite) => addFavoriteApi(id, favorite),
     enabled: !!id,
-    onSuccess: (data) => {
-      console.log(data);
+    onSuccess: () => {
       toast.success("Favorite added!");
       queryClient.invalidateQueries(["favorites"]);
     },

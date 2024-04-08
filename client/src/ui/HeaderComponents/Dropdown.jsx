@@ -19,7 +19,7 @@ function DropDown() {
   });
 
   const { hideSearch } = usePlantSearch();
-  // console.log(ui_data);
+
   if (!hideSearch) return;
   if (active && activeContent === 1) {
     return (
@@ -127,7 +127,6 @@ function DropDown() {
       >
         <div className="mt-4 flex lg:justify-center">
           <div className="grid grid-cols-2 gap-1 xl:gap-8">
-            {/* 32 */}
             <nav className="ml-12 mt-10 lg:ml-24 xl:ml-24">
               <h2 className="mb-3 font-serif font-bold uppercase tracking-wide underline-offset-2">
                 Learn & Explore
@@ -203,7 +202,6 @@ function DropDown() {
     >
       <div className="mt-8 flex lg:justify-center">
         <div className="grid grid-cols-2 min-[900px]:ml-16 lg:ml-0 xl:mr-20">
-          {/* 32 */}
           <nav className="lg:ml-22 ml-24 mr-8 mt-12 ">
             <h2 className="mb-3 font-serif font-bold uppercase tracking-wide underline-offset-2">
               About us

@@ -52,10 +52,6 @@ function Navbar() {
           />
         </li>
 
-        <li className="hidden lg:inline-block">
-          <LinkCustom to="/playground" type="nav" text="playground" />
-        </li>
-
         <li>
           <Btn onClick={openSearch} type="nav">
             <Icon draw={SVGDrawPaths.search} />

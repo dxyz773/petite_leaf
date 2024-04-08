@@ -74,7 +74,6 @@ function Root() {
           title="The Pothos Collection"
           btnColor="success"
           btnStyle={{ fontFamily: "serif", letterSpacing: "1.6px" }}
-          // btnStyle={{ marginRight: "1.5rem" }}
           btnText="Shop Pothos"
           navPath="collections/the-pothos-collection"
         />

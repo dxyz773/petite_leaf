@@ -1,4 +1,4 @@
-// import './App.css'
+import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
@@ -6,7 +6,6 @@ import { Provider } from "react-redux";
 import { Toaster } from "react-hot-toast";
 
 import store from "./store";
-
 import AppLayout from "./ui/AppLayout";
 import Error from "./pages/Error";
 import ScrollToTop from "./ui/ScrollToTop";
@@ -19,7 +18,6 @@ import Login from "./pages/Login";
 import Shipping from "./pages/Shipping";
 import ReturnPolicy from "./pages/ReturnPolicy";
 import FAQSection from "./pages/FAQSection";
-import Playground from "./ui/Playground";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Collections from "./features/products/Collections";
@@ -113,8 +111,8 @@ function App() {
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/cookie-policy" element={<CookiePolicy />} />
 
-              {/* //--------------- Playground ---------------------- */}
-              <Route path="/playground" element={<Playground />} />
+              {/* //--------------- ERROR ---------------------- */}
+
               <Route path="*" element={<Error />} />
             </Route>
           </Routes>

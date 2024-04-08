@@ -6,8 +6,7 @@ export function useUpdateAddress() {
   const queryClient = useQueryClient();
   const { mutate: updateAddress, isLoading: isUpdating } = useMutation({
     mutationFn: updateAddressByAddressId,
-    onSuccess: ({ data }) => {
-      console.log(data);
+    onSuccess: () => {
       toast.success("Address successfully updated");
       queryClient.invalidateQueries(["userAddresses"]);
     },

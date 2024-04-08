@@ -6,9 +6,9 @@ function CookiePolicy() {
         Last Updated: January 9, 2024
       </p>
       <p className="mb-4 mt-4 text-[15px] leading-7">
-        Petite Leaf ("us", "we", or "our") uses cookies on the petite-leaf.com
-        website (the "Service"). By using the Service, you consent to the use of
-        cookies.
+        Petite Leaf (&quot;us&quot;, &quot;we&quot;, or &quot;our&quot;) uses
+        cookies on the petite-leaf.com website (the &quot;Service&quot;). By
+        using the Service, you consent to the use of cookies.
       </p>
       <p className="mb-8 mt-4 text-[15px] leading-7">
         Our Cookie Policy explains what cookies are, how we use cookies, how
@@ -67,7 +67,7 @@ function CookiePolicy() {
             What are your choices regarding cookies
           </h4>
           <p className="text-[15px]">
-            If you'd like to delete cookies or instruct your web browser to
+            If you&apos;d like to delete cookies or instruct your web browser to
             delete or refuse cookies, please visit the help pages of your web
             browser.
           </p>
@@ -98,7 +98,7 @@ function CookiePolicy() {
           <p className="text-[15px]">
             We will let you know via email and/or a prominent notice on our
             Service, prior to the change becoming effective and update the
-            "effective date" at the top of this Cookie Policy.
+            &quot;effective date&quot; at the top of this Cookie Policy.
           </p>
           <p className="text-[15px]">
             You are advised to review this Cookie Policy periodically for any

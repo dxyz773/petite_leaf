@@ -44,11 +44,3 @@ function Error() {
 }
 
 export default Error;
-
-{
-  /* <label className="swap swap-flip align-bottom text-xl">
-<input type="checkbox" />
-<div className="swap-on">🪴</div>
-<div className="swap-off">🌿</div>
-</label> */
-}
