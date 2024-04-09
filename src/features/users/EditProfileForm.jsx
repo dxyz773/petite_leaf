@@ -215,7 +215,7 @@ function EditProfileForm({ imgModal = false, passwordModal = false, modalId }) {
         Edit Profile Info
       </h3>
       <form
-        className="flex flex-col gap-4 px-16 pb-6 pt-9"
+        className="flex flex-col gap-4 px-2 pb-6 pt-9 min-[500px]:px-16"
         onSubmit={handleSubmit(onSubmitProfileData)}
       >
         <label
@@ -230,10 +230,11 @@ function EditProfileForm({ imgModal = false, passwordModal = false, modalId }) {
           >
             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
           </svg>
+
           <input
             id="firstName"
             type="text"
-            className="bg-neutral-50 px-2 py-1 min-[500px]:grow"
+            className="grow bg-neutral-50 px-2 py-1"
             placeholder="First Name"
             defaultValue={firstName}
             disabled={isUpdating}
