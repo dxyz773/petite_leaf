@@ -35,7 +35,7 @@ function AddressesForm({ edit = false, address = "" }) {
     });
   }
 
-  console.log(address);
+
   return (
     <div className="bg-neutral-100 pt-4">
       <h3 className="text-center text-[17px] font-semibold tracking-wide">

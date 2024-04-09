@@ -8,9 +8,9 @@ function Btn({ children, type, to, onClick }) {
     product_soldout:
       "btn w-[100%] justify-center rounded-sm font-normal uppercase text-neutral-200  hover:text-neutral-200 bg-neutral-500 hover:bg-neutral-500 tracking-wider font-serif cursor-not-allowed",
     list_item:
-      "btn w-[28rem] sm:w-[39rem] rounded-sm bg-neutral-950 font-normal uppercase hover:bg-lime-400 md:w-[45rem] lg:w-[12rem] min-[1150px]:w-[14rem] xl:w-[16rem] min-[1380px]:w-[17rem] min-[1420px]:w-[18rem] 2xl:w-[21rem] text-neutral-200 hover:text-neutral-950 tracking-wider font-serif",
+      "btn w-[18.75rem] min-[500px]:w-[28rem] sm:w-[39rem] rounded-sm bg-neutral-950 font-normal uppercase hover:bg-lime-400 md:w-[45rem] lg:w-[12rem] min-[1150px]:w-[14rem] xl:w-[16rem] min-[1380px]:w-[17rem] min-[1420px]:w-[18rem] 2xl:w-[21rem] text-neutral-200 hover:text-neutral-950 tracking-wider font-serif",
     list_item_soldout:
-      "btn w-[28rem] sm:w-[39rem] rounded-sm bg-neutral-950 font-normal uppercase text-neutral-200  hover:text-neutral-200 bg-neutral-500 hover:bg-neutral-500 md:w-[45rem] lg:w-[12rem] min-[1150px]:w-[14rem] xl:w-[16rem] min-[1380px]:w-[17rem] min-[1420px]:w-[18rem] 2xl:w-[21rem] tracking-wider font-serif cursor-not-allowed",
+      "btn w-[18.75rem] min-[500px]:w-[28rem] sm:w-[39rem] rounded-sm bg-neutral-950 font-normal uppercase text-neutral-200  hover:text-neutral-200 bg-neutral-500 hover:bg-neutral-500 md:w-[45rem] lg:w-[12rem] min-[1150px]:w-[14rem] xl:w-[16rem] min-[1380px]:w-[17rem] min-[1420px]:w-[18rem] 2xl:w-[21rem] tracking-wider font-serif cursor-not-allowed",
     nav: "align-middle",
     close: "transition-all duration-300 hover:scale-110 pl-1",
     collection_cover:
