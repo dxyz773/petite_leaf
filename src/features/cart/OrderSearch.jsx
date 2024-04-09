@@ -13,14 +13,14 @@ function OrderSearch() {
           <input
             id="orderSearch"
             type="text"
-            className="w-[25rem] px-6 py-3"
+            className="w-[19rem] px-6 py-3 min-[500px]:w-[25rem]"
             placeholder="Order #"
             value={orderSearch}
             onChange={(e) => setOrderSearch(e.target.value)}
           />
 
           <button
-            className="btn btn-md  mt-2 rounded-sm bg-neutral-950 text-xs font-normal uppercase tracking-widest text-neutral-200 hover:bg-lime-400 hover:text-neutral-950 "
+            className="btn btn-md mt-2 rounded-sm bg-neutral-950 text-xs font-normal uppercase tracking-widest text-neutral-200 hover:bg-lime-400 hover:text-neutral-950 "
             type="submit"
             onClick={() => navigate(`/order/${orderSearch}`)}
           >
