@@ -18,7 +18,7 @@ function ListItem({ plant }) {
     [hoverActiveStatus, plant?.hover_img, plant?.main_img],
   );
   return (
-    <div className="card w-full rounded-sm bg-base-100 font-serif tracking-wide shadow-sm">
+    <div className="card w-[18.75rem] rounded-sm bg-base-100 font-serif tracking-wide shadow-sm min-[500px]:w-full">
       <Link
         to={`/products/${plant.main_name}`.toLowerCase().replaceAll(" ", "-")}
       >
@@ -27,7 +27,7 @@ function ListItem({ plant }) {
             src={activeImg}
             onMouseOver={() => setHoverActiveStatus(true)}
             onMouseOut={() => setHoverActiveStatus(false)}
-            className="h-[30rem] w-[30rem] object-cover sm:h-[40rem] sm:w-[40rem] md:h-[45rem] md:w-[45rem] lg:h-[14rem] lg:w-[14rem] xl:h-[18rem] xl:w-[18rem]"
+            className="w-[18.75rem] object-cover min-[500px]:h-[30rem] min-[500px]:w-[30rem] sm:h-[40rem] sm:w-[40rem] md:h-[45rem] md:w-[45rem] lg:h-[14rem] lg:w-[14rem] xl:h-[18rem] xl:w-[18rem]"
           />
         </figure>
       </Link>

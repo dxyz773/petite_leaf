@@ -109,7 +109,7 @@ function EditProfileForm({ imgModal = false, passwordModal = false, modalId }) {
             <input
               id="email"
               type="text"
-              className="grow bg-neutral-200/40 px-2 py-1 text-neutral-300"
+              className="w-max-w-xs bg-neutral-200/40 px-2 py-1 text-neutral-300 min-[500px]:grow"
               placeholder={email}
               disabled
             />
@@ -134,7 +134,7 @@ function EditProfileForm({ imgModal = false, passwordModal = false, modalId }) {
             <input
               id="password"
               type="password"
-              className="grow bg-neutral-50 px-2 py-1"
+              className="w-max-w-xs bg-neutral-50 px-2 py-1 min-[500px]:grow"
               placeholder="New password"
               autoComplete="current-password"
               disabled={isUpdating}
@@ -174,7 +174,7 @@ function EditProfileForm({ imgModal = false, passwordModal = false, modalId }) {
             <input
               id="passwordConfirm"
               type="password"
-              className="grow bg-neutral-50 px-2 py-1"
+              className="w-max-w-xs bg-neutral-50 px-2 py-1 min-[500px]:grow"
               placeholder="Confirm new password"
               autoComplete="current-password"
               disabled={isUpdating}
@@ -233,7 +233,7 @@ function EditProfileForm({ imgModal = false, passwordModal = false, modalId }) {
           <input
             id="firstName"
             type="text"
-            className="grow bg-neutral-50 px-2 py-1"
+            className="bg-neutral-50 px-2 py-1 min-[500px]:grow"
             placeholder="First Name"
             defaultValue={firstName}
             disabled={isUpdating}

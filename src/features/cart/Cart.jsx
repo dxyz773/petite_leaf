@@ -26,7 +26,7 @@ function Cart() {
             {emptyCart ? "" : ` ${numItems}`}
           </span>
         </div>
-        <div className="w-[450px]">
+        <div className="min-[500px]:w-[450px]">
           {!emptyCart ? (
             cart?.map((plant) => <CartItem plant={plant} key={plant.id} />)
           ) : (
