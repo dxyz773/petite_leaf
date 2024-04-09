@@ -114,7 +114,7 @@ function Checkout() {
             </div>
           </div>
 
-          <div className="ml-auto mr-auto w-full min-w-[29.114rem] max-w-[42rem] rounded-none border-t-2">
+          <div className="ml-auto mr-auto w-full max-w-[42rem] rounded-none border-t-2 min-[320px]:min-w-[20rem] min-[500px]:min-w-[29.114rem]">
             <CheckoutForm subTotal={subTotal} cart={cart} />
           </div>
         </>
