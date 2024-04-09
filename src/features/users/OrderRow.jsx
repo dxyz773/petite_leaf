@@ -25,7 +25,7 @@ function OrderRow({ order, date }) {
             View order
           </button>
         </div>
-        <div className="mt-10 flex w-[485px] gap-5 pb-10 font-normal uppercase lg:gap-4 lg:pb-0 lg:pl-0 xl:gap-5 xl:pl-5">
+        <div className="mt-10 flex gap-5 pb-10 font-normal uppercase min-[500px]:w-[485px] lg:gap-4 lg:pb-0 lg:pl-0 xl:gap-5 xl:pl-5">
           {items?.slice(0, 5).map((item) => (
             <img
               key={item.id}

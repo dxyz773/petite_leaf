@@ -90,7 +90,7 @@ function EditProfileForm({ imgModal = false, passwordModal = false, modalId }) {
           Update Password
         </h3>
         <form
-          className="flex flex-col gap-1 px-20 pb-16 pt-9"
+          className="flex flex-col gap-1 px-2 pb-16 pt-9 min-[500px]:px-20"
           onSubmit={handleSubmit(onSubmitPassword)}
         >
           <label
@@ -134,7 +134,7 @@ function EditProfileForm({ imgModal = false, passwordModal = false, modalId }) {
             <input
               id="password"
               type="password"
-              className="w-max-w-xs bg-neutral-50 px-2 py-1 min-[500px]:grow"
+              className="grow bg-neutral-50 px-2 py-1"
               placeholder="New password"
               autoComplete="current-password"
               disabled={isUpdating}
@@ -174,7 +174,7 @@ function EditProfileForm({ imgModal = false, passwordModal = false, modalId }) {
             <input
               id="passwordConfirm"
               type="password"
-              className="w-max-w-xs bg-neutral-50 px-2 py-1 min-[500px]:grow"
+              className="grow bg-neutral-50 px-2 py-1"
               placeholder="Confirm new password"
               autoComplete="current-password"
               disabled={isUpdating}
