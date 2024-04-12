@@ -40,7 +40,7 @@ function Root() {
       >
         <FeaturedPhoto
           url="alyani-yang-WajET_vzPmI-unsplash.jpg"
-          divStyle="col-span-2 h-[20rem] w-full bg-cover px-8 pt-8 lg:h-[26rem]"
+          divStyle="col-span-2 h-[20rem] w-full bg-cover px-8 pt-8 lg:h-full"
           titleStyle="mb-5 font-serif text-5xl font-bold text-lime-50"
           title="Plant Shop"
           btnColor="success"
@@ -53,7 +53,7 @@ function Root() {
 
         <FeaturedPhoto
           url="jungle-space-BeOI4eQdFCw-unsplash.jpg"
-          divStyle="h-[20rem] w-full bg-cover lg:h-[26rem] flex flex-col items-end"
+          divStyle="h-[20rem] w-full bg-cover lg:h-full flex flex-col items-end"
           titleStyle="mb-5 mr-4 pt-6 font-serif text-4xl font-bold text-lime-50"
           title="Collections"
           btnColor="secondary"
@@ -69,7 +69,7 @@ function Root() {
 
         <FeaturedPhoto
           url="jungle-space-rrO6fTQI-Q0-unsplash.jpg"
-          divStyle="h-[20rem] w-full bg-cover lg:h-[22rem] flex flex-col items-center justify-center"
+          divStyle="h-[20rem] w-full bg-cover lg:h-full flex flex-col items-center justify-center"
           titleStyle="mb-5 mr-4 font-serif text-3xl font-bold text-lime-50"
           title="The Pothos Collection"
           btnColor="success"
@@ -81,7 +81,7 @@ function Root() {
 
         <FeaturedPhoto
           url="markus-spiske-sFydXGrt5OA-unsplash.jpg"
-          divStyle="h-[20rem] w-full bg-cover lg:h-[22rem]"
+          divStyle="h-[20rem] w-full bg-cover lg:h-full"
           titleStyle="bg-neutral-900/20 mb-4 font-serif text-2xl font-bold text-neutral-200 pl-4 pt-4"
           title="The Botanical Journal"
           btnStyle={{
@@ -97,7 +97,7 @@ function Root() {
 
         <FeaturedPhoto
           url="feey-KcjnCrBEDZ4-unsplash.jpg"
-          divStyle="h-[20rem] w-full bg-cover lg:h-[22rem]"
+          divStyle="h-[20rem] w-full bg-cover lg:h-full"
           titleStyle="mb-5 font-serif text-2xl pl-4 pt-4 font-bold text-lime-50"
           title="The Philodendron Collection"
           btnColor="success"
