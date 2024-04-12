@@ -5,7 +5,7 @@ import { toast } from "react-hot-toast";
 import Loading from "../../ui/Loading";
 import Btn from "../../ui/Btn";
 import Icon from "../../ui/Icon";
-import Pagination from "../../ui/Pagination";
+// import Pagination from "../../ui/Pagination";
 import Recommendations from "./Recommendations";
 
 import { filterSVGPaths } from "../../utils/helperData";
@@ -128,15 +128,35 @@ function Product() {
         </div>
 
         <div>
-          <img src={activeImg || main_img} className="w-[60rem] lg:w-[44rem]" />
+          <img
+            src={activeImg || main_img}
+            className="hidden w-[60rem] lg:inline-block lg:w-[44rem]"
+          />
         </div>
-
+        <div className="lg:hidden">
+          <swiper-container
+            style={{
+              "--swiper-navigation-color": "#a3a3a3",
+              "--swiper-pagination-color": "#22c55e",
+            }}
+            pagination-clickable="true"
+            scrollbar-clickable="true"
+            pagination="true"
+            navigation="true"
+          >
+            {imgs.map((curr, i) => (
+              <swiper-slide lazy={true} key={curr}>
+                <img loading="lazy" src={curr} alt={`${main_name} ${i + 1}`} />
+              </swiper-slide>
+            ))}
+          </swiper-container>
+        </div>
         {/* IMAGE PAGINATION */}
-        <Pagination
+        {/* <Pagination
           arr={imgs}
           style="lg:hidden border-lime-900/85"
           action={setActiveImg}
-        />
+        /> */}
 
         <div className="flex flex-col lg:w-[35rem]">
           <h1
