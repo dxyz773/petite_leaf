@@ -88,7 +88,7 @@ function OurStory() {
           </p>
           <br />
           <p className="mt-12 max-w-[490px] border border-neutral-300 py-3 pl-5 pr-2 font-serif text-base">
-            If you or someone you know is in crisis, you can speak to somemone
+            If you or someone you know is in crisis, you can speak to someone
             27/7 by calling or texting the National Suicide Hotline:
             <span className="font-semibold"> 988</span>
           </p>
