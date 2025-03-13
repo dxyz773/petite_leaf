@@ -7,9 +7,12 @@ export function useProducts() {
 
   // --------------------------- FILTER --------------------------------- //
   let filters = [];
+
   for (const [filterField, valueField] of searchParams.entries()) {
     const field = `${filterField.replaceAll("-", "_")}_id`;
+
     const value = Number(valueField.at(-1));
+
     if (field === "sortBy_id") continue;
     filters.push({
       field,
