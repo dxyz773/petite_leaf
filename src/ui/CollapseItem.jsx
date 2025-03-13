@@ -25,12 +25,12 @@ function CollapseItem({ categoryChoiceId, name, text }) {
     if (searchParams.get(formattedFilterField) === value) {
       searchParams.delete(formattedFilterField, value);
     } else if (
-      searchParams.get(formattedFilterField !== value) ||
+      searchParams.get(formattedFilterField) !== value &&
       !searchParams.get(formattedFilterField)
     ) {
       searchParams.set(formattedFilterField, value);
     } else if (
-      searchParams.get(formattedFilterField !== value) ||
+      searchParams.get(formattedFilterField) !== value &&
       searchParams.get(formattedFilterField)
     ) {
       return;
