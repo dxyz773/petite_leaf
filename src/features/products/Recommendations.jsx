@@ -15,9 +15,9 @@ function Recommendations({ page }) {
     <div
       className={page === "home" ? "pb-20  pt-10" : "mt-12  pb-8"}
       style={{
-        borderBottom: "solid 1px #0a0a0a",
+        borderBottom: "solid 1px #cecece",
 
-        borderTop: "solid 1px #0a0a0a",
+        borderTop: "solid 1px #cecece",
       }}
     >
       <h2 className="px-6 pb-2 pt-7 font-serif text-[23px] font-normal">
