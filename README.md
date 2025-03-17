@@ -29,7 +29,7 @@
 
 ### Backend
 
-- Supabase (Postgres Database, Storage & API)
+- Supabase (Postgres Database, Storage & API, Authentication & Authorization)
 
 ### Style
 
