@@ -182,9 +182,7 @@ function Root() {
           </Button>
         </div>
         <div
-          style={{
-            backgroundImage: `url('./IMG_0806.jpg')`,
-          }}
+          style={{ backgroundImage: `url('./IMG_0806.jpg')` }}
           className="h-[30rem] w-full bg-cover lg:h-full "
         ></div>
       </div>
