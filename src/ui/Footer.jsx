@@ -3,6 +3,8 @@ import Icon from "./Icon";
 import LinkCustom from "./LinkCustom";
 
 function Footer() {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
   return (
     <div className=" bg-green-900 text-neutral-300">
       <footer className="footer bg-base-200 p-10 font-serif tracking-wider text-base-content">
@@ -54,7 +56,7 @@ function Footer() {
               <input
                 type="text"
                 placeholder="Enter your email"
-                className="input join-item input-bordered input-md rounded-none border border-black bg-[#fff] "
+                className="input input-md join-item input-bordered rounded-none border border-black bg-[#fff] "
               />
               <button className="btn join-item rounded-none border bg-lime-500 font-normal text-neutral-950 hover:bg-lime-500 ">
                 Subscribe
@@ -75,7 +77,7 @@ function Footer() {
             />
           </Link>
           <p className="font-serif tracking-wide">
-            Copyright © 2024 - Petite Leaf
+            Copyright &copy; {` ${currentYear} - Petite Leaf`}
           </p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
